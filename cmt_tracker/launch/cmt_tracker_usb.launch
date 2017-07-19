@@ -1,0 +1,10 @@
+<launch>
+  <include file="$(find usb_cam)/launch/usb_cam-test.launch" />
+
+  <node name="cmt_tracker" pkg="cmt_tracker" type="cmt_tracker_node" respawn="false" output="screen" >
+    <param name="image" value="/usb_cam/image_raw" />
+    <param name="target" value="trackingObject" />
+  </node>
+
+
+ </launch>

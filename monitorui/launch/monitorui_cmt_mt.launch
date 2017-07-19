@@ -1,0 +1,17 @@
+
+<launch>
+<node name="monitorui" pkg="monitorui" type="monitorui" output="screen" >
+
+  <param name="getimageservice" value="/cmt_tracker/get_image" />
+  <param name="initservice" value="/cmt_tracker/init_tracker" />
+  <param name="trackobject" value="/cmt_tracker/trackingObject" />
+
+  <param name="camera" value="/mtcamerdriver/image_raw" />
+
+  <param name="image_transport" value="compressed" />
+
+</node>
+<!--
+  <include file="$(find cmt_tracker)/launch/cmt_tracker_mt.launch" />
+-->
+</launch>

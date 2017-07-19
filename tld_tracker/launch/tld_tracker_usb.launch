@@ -1,0 +1,8 @@
+<launch>
+
+  <node name="opentld" pkg="tld_tracker" type="opentld" respawn="false" output="screen" >
+      <param name="cameraNo" value="0" />
+  </node>
+
+
+ </launch>

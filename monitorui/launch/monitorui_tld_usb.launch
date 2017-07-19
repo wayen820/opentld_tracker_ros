@@ -1,0 +1,17 @@
+<launch>
+<node name="monitorui" pkg="monitorui" type="monitorui" output="screen" >
+
+  <param name="getimageservice" value="/opentld/get_image" />
+  <param name="initservice" value="/opentld/init_tracker" />
+  <param name="trackobject" value="/opentld/trackingObject" />
+
+  <param name="camera" value="/opentld/image_raw" />
+
+  <param name="image_transport" value="compressed" />
+  <param name="jpeg_quality" value="30" />
+
+</node>
+<!--
+<include file="$(find tld_tracker)/launch/tld_tracker_usb.launch" />
+-->
+</launch>
